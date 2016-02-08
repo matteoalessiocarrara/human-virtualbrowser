@@ -82,5 +82,5 @@ La sintassi delle docstring è ispirata a quella usata da [NumPy](https://github
   Write programs to work together. Write programs to handle text streams, because
   that is a universal interface.
 
-Aggiornamenti: [GitHub](https://github.com/matteoalessiocarrara)
+Aggiornamenti: [GitHub](https://github.com/matteoalessiocarrara)  
 Email: sw.matteoac@gmail.com
