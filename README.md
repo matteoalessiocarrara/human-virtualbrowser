@@ -1,20 +1,13 @@
 # Human Virtualbrowser #
 
-Browser headless scritto in python, ispirato ai browser con gui
+Browser headless scritto in python, ispirato ai browser con gui - libreria
 
-Questa libreria contiene un oggetto browser utilizzabile in python, molto simile
-ai comuni browser come firefox. Per questo, dovrebbe essere molto semplice e intuitivo.
-Purtroppo però, il fatto di essere ispirato a browser con gui e non avere una gui
-lo rende scomodo per un utilizzo reale. Quindi ho scritto un wrapper ottimizzato
-per i bot, lo trovate [qui](https://github.com/matteoalessiocarrara/bot-virtualbrowser).
 
 ## Esempio ##
 
 ```python
 import virtualbrowser
 import logging
-import version
-
 
 logging.basicConfig(level=logging.WARNING)
 
@@ -65,15 +58,52 @@ window2.close()
 window.close()
 ```
 
+
+## Obbiettivo ##
+
+L'obbiettivo è scrivere un "oggetto" browser che abbia le stesse azioni (metodi)
+e caratteristiche (attributi) della gui di un normale browser, come firefox.  
+Per esempio, un oggetto browser avrà un attributo "gestore delle schede", e questo
+avrà a sua volta un attributo "schede aperte". Un oggetto "scheda", avrà per esempio
+un metodo "chiudi", "ricarica" ecc.
+
+Il browser gui preso come riferimento è firefox, ma si ispira al funzionamento dei
+browser con gui in generale.
+
+Essendo ispirato ai browser gui visti "dall'esterno", dovrebbe essere molto semplice
+e intuitivo. Purtroppo però, il fatto di essere ispirato a browser con gui e non 
+avere una gui lo rende scomodo per un utilizzo reale.
+Quindi ho scritto un wrapper ottimizzato per l'utilizzo in script, lo trovate 
+[qui](https://github.com/matteoalessiocarrara/bot-virtualbrowser).
+
+
+## A cosa serve? ##
+
+Da solo, a poco. Infatti è solo un componente di un [progetto più grande](https://github.com/matteoalessiocarrara/bot-virtualbrowser).  
+L'idea iniziale era scrivere un browser headless con funzioni simili a quelle dei
+browser gui. Io preferisco, quando possibile, scomporre i progetti in progetti più
+piccoli, indipendenti e riutilizzabili.
+Quindi questo è il browser-gui-senza-gui, nell'altro repo ci sono delle ottimizzazioni
+per renderlo un browser headless comodo.
+
+
+## Perché quel nome? ##
+
+Il browser dovrebbe rendere disponibili azioni (metodi) per esseri umani, quindi
+non semplificazioni per bot come apri-scheda/scarica-contenuto/chiudi-scheda.
+Queste sono contenute [in un repo separato](https://github.com/matteoalessiocarrara/bot-virtualbrowser).
+
+
 ## Requisiti ##
 
  * Python 2
  * [BeautifulSoup 4](http://www.crummy.com/software/BeautifulSoup/#Download)
  * [Requests](http://docs.python-requests.org/en/master/user/install/#install)
 
+
 ## Codice ##
 
-La sintassi delle docstring è ispirata a quella usata da [NumPy](https://github.com/numpy/numpy/)
+La sintassi delle docstring è ispirata a quella usata in [NumPy](https://github.com/numpy/numpy/)
 
 
 ## Altre informazioni ##
