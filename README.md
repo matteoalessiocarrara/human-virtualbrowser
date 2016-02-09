@@ -64,8 +64,8 @@ window.close()
 L'obbiettivo è scrivere un "oggetto" browser che abbia le stesse azioni (metodi)
 e caratteristiche (attributi) della gui di un normale browser, come firefox.  
 Per esempio, un oggetto browser avrà un attributo "gestore delle schede", e questo
-avrà a sua volta un attributo "schede aperte". Un oggetto "scheda", avrà per esempio
-un metodo "chiudi", "ricarica" ecc.
+avrà a sua volta un attributo "schede aperte". Un oggetto "scheda", avrà un metodo
+"chiudi", "ricarica" ecc.
 
 Il browser gui preso come riferimento è firefox, ma si ispira al funzionamento dei
 browser con gui in generale.
