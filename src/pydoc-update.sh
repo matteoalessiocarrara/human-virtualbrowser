@@ -28,3 +28,8 @@ pydoc ./managers.py >> $OUTFILE
 pydoc ./requests2.py >> $OUTFILE
 pydoc ./version.py >> $OUTFILE
 
+# Rimuove il percorso dei file dalla documentazione
+# TODO È possibile lasciare solo il percorso relativo alla root del repo?
+
+sed -i -e '/^FILE/,+2d' $OUTFILE
+

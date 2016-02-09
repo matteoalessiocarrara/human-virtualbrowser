@@ -237,6 +237,8 @@ class WindowsManager(Manager):
 		window_class : virtualbrowser_obj.Window
 			Eventualmente, si può usare una classe derivata da virtualbrowser_obj.Window
 			per la nuova finestra
+		tabs_manager_class : managers.TabsManager
+			La classe del gestore delle schede per la nuova finestra
 		"""
 
 		logger.debug("Classe della nuova finestra: %s", window_class)

@@ -186,9 +186,9 @@ class Tab(object):
 	def __init_content(self):
 		"""
 		METODO DA CHIAMARE IN __init__
-		Va creata una variabile usata da get_content e set_content: la variabile
-		è creata anche da set_content, ma se venisse chiamato get_content prima 
-		di set_content si otterrebbe un errore
+		Va creata una variabile usata da get_content e download_content: la variabile
+		è creata anche da download_content, ma se venisse chiamato get_content prima 
+		di download_content si otterrebbe un errore
 		"""
 		self.__content = None
 		
@@ -221,7 +221,7 @@ class Tab(object):
 	def re_load(self):
 		"""Ricarica il contenuto della scheda"""
 		logger.info("Ricaricando la scheda %s", self.tab_id)
-		self.set_content()
+		self.download_content()
 		
 	def post(self, url, data=None, **kwargs):
 		"""Collegamento a requests.Session.post"""

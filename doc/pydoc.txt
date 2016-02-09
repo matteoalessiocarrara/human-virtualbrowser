@@ -3,9 +3,6 @@ Help on module virtualbrowser:
 NAME
     virtualbrowser - Browser
 
-FILE
-    /src/virtualbrowser.py
-
 CLASSES
     __builtin__.object
         Browser
@@ -50,9 +47,6 @@ Help on module virtualbrowser_obj:
 
 NAME
     virtualbrowser_obj - Componenti principali del browser
-
-FILE
-    /src/virtualbrowser_obj.py
 
 CLASSES
     __builtin__.object
@@ -204,9 +198,6 @@ Help on module managers:
 NAME
     managers - Oggetti che gestiscono liste di oggetti
 
-FILE
-    /src/managers.py
-
 CLASSES
     __builtin__.object
         Manager
@@ -336,6 +327,8 @@ CLASSES
      |      window_class : virtualbrowser_obj.Window
      |              Eventualmente, si può usare una classe derivata da virtualbrowser_obj.Window
      |              per la nuova finestra
+     |      tabs_manager_class : managers.TabsManager
+     |              La classe del gestore delle schede per la nuova finestra
      |  
      |  get_parent_browser(self)
      |      Restituisce il browser al quale appartiene questo gestore delle finestre
@@ -385,9 +378,6 @@ Help on module requests2:
 
 NAME
     requests2 - Estensione della libreria requests
-
-FILE
-    /src/requests2.py
 
 CLASSES
     requests.sessions.Session(requests.sessions.SessionRedirectMixin)
@@ -584,20 +574,17 @@ Help on module version:
 NAME
     version
 
-FILE
-    /src/version.py
-
 DESCRIPTION
     Informazioni sulla libreria - contiene le informazioni solitamente ottenibili con 
     il parametro --version nei software GNU
 
 DATA
     copyright = 'Copyright (C) 2015 - 2016 Matteo Alessio Carrara'
-    lib_name = 'lib-virtualbrowser'
+    lib_name = 'lib-human-virtualbrowser'
     license = 'License GPLv3+: GNU GPL version 3 or later <http...e is NO ...
     version_major = 1
     version_minor = 0
-    version_patch = 0
-    version_str = '1.0.0'
+    version_patch = 1
+    version_str = '1.0.1'
 
 
